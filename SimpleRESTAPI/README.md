@@ -3,17 +3,23 @@
 A simple REST API built with Python and FastAPI.
 
 ## Features
-- Create, read, update, delete items (CRUD)
+
+- CRUD operations for items
 - JSON-based communication
-- Simple in-memory storage
+- Data validation using Pydantic
+- Automated API tests with pytest
+- Basic CI workflow using GitHub Actions
 
 ## Technologies
+
 - Python
 - FastAPI
 - Pydantic
+- pytest
+- GitHub Actions
 
-## Run
+## Run the application
 
 ```bash
-pip install fastapi uvicorn
+pip install -r requirements.txt
 python -m uvicorn main:app --reload
