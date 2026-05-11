@@ -23,3 +23,19 @@ A simple REST API built with Python and FastAPI.
 ```bash
 pip install -r requirements.txt
 python -m uvicorn main:app --reload
+```
+
+## Run tests
+
+```bash
+python -m pytest
+```
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/items` | Get all items |
+| POST | `/items` | Create a new item |
+| PUT | `/items/{item_id}` | Update an item |
+| DELETE | `/items/{item_id}` | Delete an item |
