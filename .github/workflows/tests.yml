@@ -23,4 +23,5 @@ jobs:
           pip install fastapi uvicorn pydantic pytest httpx
 
       - name: Run tests
-        run: python -m pytest
+        working-directory: SimpleRESTAPI
+        run: python -m pytest -v
